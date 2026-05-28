@@ -1,0 +1,119 @@
+---
+description: React JS frontend-only project standards, structure, and UI rules
+alwaysApply: true
+---
+
+# React Frontend Project Rules
+
+## Stack & Constraints
+
+- React JS only — **no TypeScript** (`.jsx` files only)
+- **Frontend only** — no backend, Node.js server, Spring Boot, database, or API integration
+- Static dummy data in `data/dummyData.js` (arrays/JSON); use `localStorage` only when persistence is needed
+- Avoid unnecessary packages; beginner-friendly, simple, readable code
+
+## React Patterns
+
+- Functional components only; React Hooks (`useState`, `useEffect` when needed)
+- Component-based architecture; reusable components in `components/`
+- Props for communication; conditional rendering; `map()` for lists
+- Forms with validation; loading states when needed; modals/popups done properly
+- `react-router-dom` for navigation; semantic HTML
+- **Icons rule (strict)**:
+  - Use **`react-icons` only** for icons (preferred over custom icon assets)
+  - **Do not use SVG icons**: no inline `<svg>`, no `.svg` icon files, no importing `.svg` for icons
+  - If an icon is missing, pick the closest `react-icons` alternative instead of adding SVG
+  - Keep animations simple
+
+## Naming
+
+- **PascalCase** — components
+- **camelCase** — variables
+- Meaningful names; no duplicate code; no inline CSS
+
+## Styling
+
+- **Normal CSS only** — separate `.css` files per component/page/layout
+- **No Tailwind CSS**
+- Global styles: `styles/global.css`, `styles/variables.css`
+- Responsive design: Flexbox, CSS Grid, media queries
+- Units: `%`, `rem`, `vw`, `vh` when appropriate
+- Clean, modern UI; optimized images in `assets/`
+
+## UI & Design (Screenshot-Driven)
+
+- Match shared UI **pixel-perfect**: layout, spacing, colors, fonts, icons, alignment
+- Do **not** change design or add extra sections/colors/styles without explicit permission
+- UI accuracy over creativity; reuse components
+- Stay responsive while preserving the original design
+- No horizontal scroll; consistent spacing/alignment across breakpoints
+- Navbar, cards, tables, forms must adapt on mobile/tablet/laptop/desktop
+- Test common breakpoints; smooth UX on all screen sizes
+
+## Cleanliness & Maintenance
+
+- Delete unused files, components, CSS files, images, and imports
+- Remove unused code whenever necessary
+- Keep the project clean and optimized
+- Do not keep default Vite or React starter files if unused
+- Remove unused variables and functions
+- Avoid unnecessary folders and packages
+- Maintain a clean folder structure
+
+## Structure Preservation (Strict)
+
+- Do not change the existing project structure unless explicitly requested
+- Follow the current folder structure consistently
+- Do not rename folders or components without permission
+- Do not move files to different folders unless requested
+- Preserve the existing architecture and code organization
+- Any structural changes must be done only after approval
+- Continue development using the current structure and patterns
+
+## Folder Structure
+
+```
+src/
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── videos/
+├── components/
+│   ├── Navbar/     (Navbar.jsx, Navbar.css, hooks/useNavbar.js)
+│   ├── Footer/
+│   ├── Button/
+│   └── Card/
+├── pages/
+│   ├── Home/
+│   ├── About/
+│   ├── Contact/
+│   └── Services/
+│   (each: Page.jsx, Page.css, hooks/usePage.js)
+├── layouts/
+│   ├── MainLayout.jsx
+│   └── MainLayout.css
+├── routes/
+│   └── AppRoutes.jsx
+├── shared-hooks/
+│   ├── useFetch.js
+│   ├── useLocalStorage.js
+│   ├── useToggle.js
+│   └── useWindowSize.js
+├── utils/
+│   └── helpers.js
+├── data/
+│   └── dummyData.js
+├── styles/
+│   ├── global.css
+│   └── variables.css
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## Implementation Checklist
+
+- New pages → `pages/`; shared UI → `components/`; routing → `routes/AppRoutes.jsx`
+- Wrap pages with `layouts/MainLayout.jsx` (Navbar + Footer)
+- Data → import from `data/dummyData.js`; shared logic → `shared-hooks/` or page/component `hooks/`
+- Before creating files, check for existing reusable components/hooks

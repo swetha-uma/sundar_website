@@ -1,0 +1,40 @@
+.career__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.career__item {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 0.9rem;
+  padding: 0.9rem;
+  border-radius: 0.95rem;
+  border: 1px solid var(--color-surface-border);
+  background: var(--color-surface-2);
+}
+
+.career__period {
+  font-weight: 800;
+  color: var(--color-gold);
+  letter-spacing: -0.01em;
+}
+
+.career__title {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.career__meta {
+  margin-top: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 520px) {
+  .career__item {
+    grid-template-columns: 1fr;
+  }
+}
+
