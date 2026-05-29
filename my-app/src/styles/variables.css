@@ -1,0 +1,95 @@
+:root {
+  /* Backgrounds */
+  --color-bg: #0b0f19;
+  --color-bg-deep: #070a12;
+  --color-bg-card: #13182a;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-glow-blue: oklch(0.28 0.04 250 / 0.6);
+  --color-glow-gold: rgba(212, 175, 55, 0.08);
+
+  /* Text */
+  --color-text-primary: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  /* Gold accent */
+  --color-gold: #d4af37;
+  --color-gold-light: #e8c766;
+  --color-gold-dark: #b8941f;
+  --color-border-gold: rgba(212, 175, 55, 0.45);
+
+  /* Legacy aliases (used in components) */
+  --color-white: var(--color-text-primary);
+  --color-text: var(--color-text-primary);
+  --color-bg-elevated: var(--color-bg-card);
+  --color-text-dim: var(--color-text-muted);
+
+  /* Gradients */
+  --gradient-gold: linear-gradient(135deg, #e8c766, #d4af37, #b8941f);
+  --gradient-text: linear-gradient(180deg, #f8fafc, #94a3b8);
+  --gradient-glass: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
+  --gradient-page-bg: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%);
+  --gradient-glow-blue: radial-gradient(
+    ellipse 90% 55% at 50% 0%,
+    var(--color-glow-blue) 0%,
+    transparent 68%
+  );
+  --gradient-glow-gold: radial-gradient(
+    ellipse 55% 45% at 92% 98%,
+    var(--color-glow-gold) 0%,
+    transparent 70%
+  );
+
+  /* Typography */
+  --font-display: 'Poppins', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Letter spacing & line height */
+  --letter-spacing-heading: -2px;
+  --line-height-heading: 1.1;
+  --letter-spacing-paragraph: 0.2px;
+  --line-height-paragraph: 1.7;
+  --letter-spacing-nav: 0.5px;
+  --letter-spacing-label: 3px;
+
+  /* Layout */
+  --max-width: 1280px;
+  --nav-height: 80px;
+  --radius-pill: 999px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Navbar glass */
+  --navbar-height: 80px;
+  --navbar-bg: rgba(5, 10, 25, 0.42);
+  --navbar-bg-scrolled: rgba(5, 10, 25, 0.65);
+  --navbar-blur: 20px;
+  --navbar-border: rgba(255, 255, 255, 0.06);
+  --navbar-border-scrolled: rgba(255, 255, 255, 0.1);
+  --transition-nav: 0.3s ease;
+
+  /* Effects */
+  --glass-blur: 20px;
+  --shadow-gold: 0 4px 32px rgba(212, 175, 55, 0.3);
+  --shadow-portrait-reflect: 0 8px 40px rgba(212, 175, 55, 0.12);
+  --glow-gold-strong: rgba(212, 175, 55, 0.25);
+  --glow-gold-soft: rgba(212, 175, 55, 0.16);
+  --glow-gold-faint: rgba(212, 175, 55, 0.12);
+  --gradient-hero-reflect: radial-gradient(
+    ellipse 75% 70% at var(--reflect-x, 50%) var(--reflect-y, 50%),
+    rgba(212, 175, 55, 0.1) 0%,
+    rgba(212, 175, 55, 0.04) 42%,
+    transparent 72%
+  );
+  --gradient-ambient-gold: radial-gradient(
+    ellipse at 50% 50%,
+    var(--glow-gold-soft) 0%,
+    rgba(212, 175, 55, 0.06) 45%,
+    transparent 72%
+  );
+  --transition: 0.25s ease;
+  --lift-offset: -4px;
+}

@@ -1,0 +1,122 @@
+.voices {
+  padding: 4rem 2rem 5rem;
+  background-color: var(--color-bg);
+}
+
+.voices__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.voices__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.voices__label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-label);
+  color: var(--color-gold);
+  text-transform: uppercase;
+}
+
+.voices__headline {
+  font-family: var(--font-sans);
+  font-size: clamp(1.875rem, 3.6vw + 0.35rem, 44px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+  max-width: 700px;
+  margin-bottom: 80px;
+}
+
+.voices__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+.voices__card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px 36px;
+  border-radius: 28px;
+  min-height: 100%;
+}
+
+.voices__quote-icon {
+  font-size: 1.75rem;
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.voices__quote {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+  flex: 1;
+}
+
+.voices__attribution {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  .voices__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .voices__headline {
+    margin-bottom: 48px;
+  }
+
+  .voices__card {
+    padding: 36px 28px;
+    gap: 24px;
+    border-radius: 24px;
+  }
+
+  .voices__quote {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .voices {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .voices__headline {
+    margin-bottom: 40px;
+  }
+
+  .voices__card {
+    padding: 28px 24px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+
+  .voices__quote {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
