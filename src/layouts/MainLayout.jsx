@@ -3,33 +3,32 @@ import { useCallback, useState } from 'react';
 import Drawer from '../components/Drawer/Drawer';
 import Navbar from '../components/Navbar/Navbar';
 import Achievements from '../pages/Achievements/Achievements';
-import Career from '../pages/Career/Career';
+import Voices from '../pages/Voices/Voices';
 import './MainLayout.css';
 
 function MainLayout() {
   const [isAchievementsOpen, setIsAchievementsOpen] = useState(false);
-  const [isCareerOpen, setIsCareerOpen] = useState(false);
+  const [isVoicesOpen, setIsVoicesOpen] = useState(false);
 
   const openAchievements = useCallback(() => setIsAchievementsOpen(true), []);
   const closeAchievements = useCallback(() => setIsAchievementsOpen(false), []);
-  const openCareer = useCallback(() => setIsCareerOpen(true), []);
-  const closeCareer = useCallback(() => setIsCareerOpen(false), []);
+  const openVoices = useCallback(() => setIsVoicesOpen(true), []);
+  const closeVoices = useCallback(() => setIsVoicesOpen(false), []);
 
   return (
     <div className="main-layout">
-      <Navbar onOpenAchievements={openAchievements} onOpenCareer={openCareer} />
+      <Navbar onOpenAchievements={openAchievements} onOpenVoices={openVoices} />
       <Outlet />
 
       <Drawer isOpen={isAchievementsOpen} title="Achievements" onClose={closeAchievements}>
         <Achievements />
       </Drawer>
 
-      <Drawer isOpen={isCareerOpen} title="Career Overview" onClose={closeCareer}>
-        <Career />
+      <Drawer isOpen={isVoicesOpen} title="Voices" onClose={closeVoices}>
+        <Voices />
       </Drawer>
     </div>
   );
 }
 
 export default MainLayout;
-

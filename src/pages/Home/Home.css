@@ -1,9 +1,9 @@
 .home {
-  padding: 0.75rem 0 3.25rem;
+  padding: 0 0 4rem;
 }
 
 .home__overview {
-  margin-top: 2.1rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.1rem;
@@ -17,7 +17,7 @@
 }
 
 .home__mini-card {
-  border-radius: 0.95rem;
+  border-radius: var(--radius-md);
   border: 1px solid var(--color-surface-border);
   background: var(--color-surface-2);
   padding: 0.85rem 0.9rem;
@@ -50,7 +50,7 @@
 
 .home__row {
   padding: 0.85rem 0.9rem;
-  border-radius: 0.95rem;
+  border-radius: var(--radius-md);
   border: 1px solid var(--color-surface-border);
   background: var(--color-surface-2);
 }

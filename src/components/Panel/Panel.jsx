@@ -1,8 +1,8 @@
 import './Panel.css';
 
-function Panel({ eyebrow, title, description, children }) {
+function Panel({ id, eyebrow, title, description, children }) {
   return (
-    <section className="panel">
+    <section className="panel" id={id}>
       <div className="panel__header">
         {eyebrow ? <div className="panel__eyebrow">{eyebrow}</div> : null}
         <h2 className="panel__title">{title}</h2>

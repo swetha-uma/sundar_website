@@ -1,16 +1,26 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { careerTimeline, certifications, featuredAchievements, highlights, heroCopy, person, recognition, stats } from '../../data/dummyData';
 import Panel from '../../components/Panel/Panel';
 import AboutHero from '../../sections/AboutHero/AboutHero';
 import './Home.css';
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#highlights') {
+      document.getElementById('highlights')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
+
   return (
     <div className="home">
       <div className="container">
         <AboutHero person={person} heroCopy={heroCopy} stats={stats} />
 
         <div className="home__overview">
-          <Panel eyebrow="Credibility" title="Highlights" description="High-signal recognition and trust markers.">
+          <Panel eyebrow="Credibility" title="Highlights" description="High-signal recognition and trust markers." id="highlights">
             <div className="home__grid-cards">
               {highlights.map((item) => (
                 <div className="home__mini-card" key={item.id}>

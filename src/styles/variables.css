@@ -1,24 +1,39 @@
 :root {
-  --color-bg: #0f1113;
-  --color-bg-2: #0b0d0f;
+  --theme-suite: executive-charcoal-gold;
+
+  /* Reference: near-black charcoal + metallic gold */
+  --color-bg: #0a0a0a;
+  --color-bg-2: #111111;
+
   --color-surface: rgba(255, 255, 255, 0.04);
   --color-surface-2: rgba(255, 255, 255, 0.06);
-  --color-surface-border: rgba(255, 255, 255, 0.08);
+  --color-surface-border: rgba(255, 255, 255, 0.1);
 
   --color-text: #ffffff;
   --color-text-muted: rgba(255, 255, 255, 0.72);
-  --color-text-soft: rgba(255, 255, 255, 0.6);
+  --color-text-soft: rgba(255, 255, 255, 0.55);
 
-  --color-gold: #d8b54a;
-  --color-gold-2: #e7c35a;
-  --color-gold-soft: rgba(216, 181, 74, 0.22);
-  --color-border: rgba(216, 181, 74, 0.22);
+  --color-gold: #c9a961;
+  --color-gold-2: #d4af37;
+  --color-gold-bright: #e8c547;
+  --color-gold-soft: rgba(201, 169, 97, 0.14);
+  --color-border: rgba(201, 169, 97, 0.55);
+
+  --color-accent: var(--color-gold);
+  --color-accent-soft: rgba(212, 175, 55, 0.1);
+  --color-accent-glow: rgba(212, 175, 55, 0.18);
+
+  --color-on-gold: #0a0a0a;
 
   --font-sans: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
 
-  --max-width: 1200px;
-  --page-x: clamp(1.2rem, 4vw, 2.75rem);
+  --max-width: 1240px;
+  --page-x: clamp(1.25rem, 4vw, 2.75rem);
   --page-y: clamp(1.3rem, 3.5vw, 2.5rem);
-}
 
+  --radius-sm: 0.65rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+}

@@ -4,14 +4,15 @@ export const person = {
   tagline: 'Global cybersecurity strategist · Former CISO · Founder',
   badge: 'Forbes Technology Council',
   company: 'SITCA Pty Ltd · iCISO LLC',
-  note: 'Currently building',
+  note: 'Currently building:',
+  ieeeBadge: 'IEEE Senior Member',
 };
 
 export const heroCopy = {
   headlineTop: 'The Architect of',
   headlineEmphasis: 'Global Digital Trust',
   description:
-    '25+ years across 4 continents — engineering AI-driven cybersecurity, governance, and resilience for high-stakes organizations.',
+    '25 years. 4 continents. One unwavering mission: engineering AI-driven cybersecurity, governance, and resilience for the world\u2019s most complex organizations.',
   primaryCta: 'Request an engagement',
   secondaryCta: 'Executive bio',
 };
@@ -25,7 +26,10 @@ export const stats = [
 
 export const navigation = {
   links: [
-    { id: 'home', label: 'Home', path: '/' },
+    { id: 'about', label: 'About', path: '/' },
+    { id: 'achievements', label: 'Achievements', action: 'achievements' },
+    { id: 'highlights', label: 'Highlights', action: 'highlights' },
+    { id: 'voices', label: 'Voices', action: 'voices' },
     { id: 'contact', label: 'Contact', path: '/contact' },
   ],
 };
@@ -66,8 +70,28 @@ export const recognition = [
   { id: 'ciso', label: 'CISO leadership' },
 ];
 
+export const voices = [
+  {
+    id: 'v1',
+    quote:
+      'A rare blend of strategic vision and hands-on security leadership — trusted at board level and in the trenches.',
+    source: 'Enterprise CISO',
+  },
+  {
+    id: 'v2',
+    quote:
+      'Senthil brings clarity to complex cyber governance challenges with a calm, executive presence.',
+    source: 'Technology Council Peer',
+  },
+  {
+    id: 'v3',
+    quote:
+      'His work on AI-driven security orchestration reflects the future of resilient digital trust.',
+    source: 'Industry Advisor',
+  },
+];
+
 export const contact = {
   email: 'hello@example.com',
   linkedinUrl: '#',
 };
-
