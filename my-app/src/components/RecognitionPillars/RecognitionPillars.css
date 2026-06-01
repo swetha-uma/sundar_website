@@ -1,11 +1,56 @@
 .recognition-pillars {
-  padding: 0 2rem 4rem;
+  padding: 2.5rem 2rem 4rem;
   background-color: var(--color-bg-deep);
 }
 
 .recognition-pillars__inner {
   max-width: var(--max-width);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.recognition-pillars__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  column-gap: clamp(2rem, 5vw, 4rem);
+  row-gap: 1.5rem;
+  align-items: end;
+}
+
+.recognition-pillars__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.recognition-pillars__label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--color-gold);
+  text-transform: uppercase;
+}
+
+.recognition-pillars__headline {
+  font-family: var(--font-sans);
+  font-size: clamp(1.75rem, 3.2vw + 0.35rem, 44px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--color-text-primary);
+}
+
+.recognition-pillars__description {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 22rem;
+  padding-bottom: 0.25rem;
 }
 
 .recognition-pillars__grid {
@@ -55,6 +100,20 @@
   letter-spacing: 0;
 }
 
+@media (max-width: 768px) {
+  .recognition-pillars__header {
+    grid-template-columns: 1fr;
+  }
+
+  .recognition-pillars__description {
+    max-width: 100%;
+  }
+
+  .recognition-pillars__headline {
+    font-size: clamp(1.625rem, 5vw, 40px);
+  }
+}
+
 @media (max-width: 900px) {
   .recognition-pillars__grid {
     grid-template-columns: 1fr;
@@ -68,7 +127,7 @@
 
 @media (max-width: 600px) {
   .recognition-pillars {
-    padding: 0 1.25rem 3rem;
+    padding: 2rem 1.25rem 3rem;
   }
 
   .recognition-pillars .feature-card {

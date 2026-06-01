@@ -161,26 +161,32 @@ export const leadershipHighlights = {
   ],
 }
 
-export const recognitionPillars = [
-  {
-    icon: 'shieldCheck',
-    title: 'Industry Recognition',
-    description:
-      'Forbes Technology Council member, IEEE Senior Member, NV1 cleared.',
-  },
-  {
-    icon: 'building',
-    title: 'Founder × Operator',
-    description:
-      'Building SITCA Pty Ltd and iCISO LLC — legacy infrastructure, not consulting.',
-  },
-  {
-    icon: 'award',
-    title: 'Thought Leadership',
-    description:
-      'Published in Forbes, IEEE, SSRN. Keynote speaker on AI security and Zero Trust.',
-  },
-]
+export const recognitionSection = {
+  label: 'RECOGNITION & IMPACT',
+  headline: 'Credibility earned in the market.',
+  description:
+    'Industry honours, companies built, and a public voice on AI security and Zero Trust.',
+  items: [
+    {
+      icon: 'shieldCheck',
+      title: 'Industry Recognition',
+      description:
+        'Forbes Technology Council member, IEEE Senior Member, NV1 cleared.',
+    },
+    {
+      icon: 'building',
+      title: 'Founder × Operator',
+      description:
+        'Building SITCA Pty Ltd and iCISO LLC — legacy infrastructure, not consulting.',
+    },
+    {
+      icon: 'award',
+      title: 'Thought Leadership',
+      description:
+        'Published in Forbes, IEEE, SSRN. Keynote speaker on AI security and Zero Trust.',
+    },
+  ],
+}
 
 export const voicesSection = {
   label: 'VOICES',
