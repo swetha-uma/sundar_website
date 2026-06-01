@@ -22,24 +22,24 @@
 .leadership-highlights__intro {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1rem;
 }
 
 .leadership-highlights__label {
-  font-family: var(--font-sans);
-  font-size: 12px;
+  font-family: var(--font-display);
+  font-size: var(--font-size-section-label);
   font-weight: 500;
-  letter-spacing: 3px;
+  letter-spacing: var(--letter-spacing-label);
   color: var(--color-gold);
   text-transform: uppercase;
 }
 
 .leadership-highlights__headline {
   font-family: var(--font-sans);
-  font-size: clamp(1.75rem, 3.2vw + 0.35rem, 44px);
-  font-weight: 700;
+  font-size: var(--font-size-section-headline);
+  font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -2px;
+  letter-spacing: -0.03em;
   color: var(--color-text-primary);
 }
 
@@ -120,7 +120,7 @@
   }
 
   .leadership-highlights__headline {
-    font-size: clamp(1.625rem, 5vw, 40px);
+    font-size: clamp(2rem, 5vw, 3.25rem);
   }
 }
 

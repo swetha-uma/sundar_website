@@ -6,6 +6,57 @@
 .executive-summary__about {
   padding: 4rem 2rem 5rem;
   background-color: var(--color-bg-deep);
+  font-size: 1rem;
+}
+
+.executive-summary__about .executive-summary__intro {
+  gap: 1rem;
+}
+
+.executive-summary__about .executive-summary__label {
+  font-size: var(--font-size-section-headline);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: var(--letter-spacing-label);
+}
+
+.executive-summary__about .executive-summary__headline {
+  gap: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-section-headline);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+
+.executive-summary__about .executive-summary__headline-line {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: var(--color-text-primary);
+}
+
+.executive-summary__about .executive-summary__description {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: var(--color-text-muted);
+}
+
+.executive-summary__about .card__label {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+}
+
+.executive-summary__about .card__value {
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 .executive-summary__inner {
@@ -26,28 +77,55 @@
 }
 
 .executive-summary__label {
-  font-family: var(--font-sans);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
   color: var(--color-gold);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .executive-summary__headline {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.35rem;
   font-family: var(--font-sans);
-  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
-  font-weight: 700;
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-heading);
-  color: var(--color-text-primary);
+  text-transform: none;
 }
 
 .executive-summary__headline-line {
   display: block;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: var(--color-text-primary);
+}
+
+.executive-summary__headline-line:first-child,
+.executive-summary__headline-line:last-child {
+  color: var(--color-text-primary);
+}
+
+.executive-summary__achievements-intro .executive-summary__label {
+  font-size: var(--font-size-section-headline);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-label);
+  white-space: nowrap;
+}
+
+.executive-summary__achievements-intro .executive-summary__timeline-headline {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-section-headline);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+  text-transform: none;
 }
 
 .executive-summary__details {
@@ -104,14 +182,28 @@
   gap: 1rem;
 }
 
-.executive-summary__timeline-headline {
+.executive-summary__achievements .timeline-section__year {
   font-family: var(--font-sans);
-  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.executive-summary__achievements .timeline-section__title {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-heading);
-  color: var(--color-text-primary);
-  max-width: 14ch;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.executive-summary__achievements .timeline-section__description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+.executive-summary__timeline-headline {
+  max-width: none;
 }
 
 @media (max-width: 900px) {
@@ -138,11 +230,24 @@
   .executive-summary__achievements {
     padding: 3rem 0 4rem;
   }
+
+  .executive-summary__achievements .timeline-section__title {
+    font-size: 1.375rem;
+  }
+
+  .executive-summary__achievements .timeline-section__description {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
   .executive-summary__cards {
     grid-template-columns: 1fr;
+  }
+
+  .executive-summary__about .executive-summary__description,
+  .executive-summary__about .card__value {
+    font-size: 1rem;
   }
 
   .executive-summary__about {

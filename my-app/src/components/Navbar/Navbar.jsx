@@ -5,12 +5,10 @@ import useNavbar from './hooks/useNavbar'
 import './Navbar.css'
 
 function Navbar() {
-  const { isMenuOpen, activeHash, isScrolled, toggleMenu, closeMenu, handleNavClick } = useNavbar()
-
-  const navbarClassName = ['navbar', isScrolled ? 'navbar--scrolled' : ''].filter(Boolean).join(' ')
+  const { isMenuOpen, activeHash, toggleMenu, closeMenu, handleNavClick } = useNavbar()
 
   return (
-    <header className={navbarClassName}>
+    <header className="navbar">
       <div className="navbar__inner">
         <a href="#about" className="navbar__brand" onClick={() => handleNavClick('#about')}>
           <span className="navbar__logo">{siteInfo.initials}</span>

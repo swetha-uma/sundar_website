@@ -1,11 +1,8 @@
 import { useState, useCallback, useEffect } from 'react'
 
-const SCROLL_THRESHOLD = 50
-
 function useNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeHash, setActiveHash] = useState(() => window.location.hash || '')
-  const [isScrolled, setIsScrolled] = useState(false)
 
   const toggleMenu = useCallback(() => {
     setIsMenuOpen((prev) => !prev)
@@ -33,16 +30,6 @@ function useNavbar() {
   }, [])
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > SCROLL_THRESHOLD)
-    }
-
-    handleScroll()
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  useEffect(() => {
     if (!isMenuOpen) return
 
     const handleResize = () => {
@@ -62,7 +49,7 @@ function useNavbar() {
     }
   }, [isMenuOpen])
 
-  return { isMenuOpen, activeHash, isScrolled, toggleMenu, closeMenu, handleNavClick }
+  return { isMenuOpen, activeHash, toggleMenu, closeMenu, handleNavClick }
 }
 
 export default useNavbar

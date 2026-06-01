@@ -17,8 +17,8 @@
 }
 
 .voices__label {
-  font-family: var(--font-sans);
-  font-size: 14px;
+  font-family: var(--font-display);
+  font-size: var(--font-size-section-label);
   font-weight: 500;
   letter-spacing: var(--letter-spacing-label);
   color: var(--color-gold);
@@ -27,7 +27,7 @@
 
 .voices__headline {
   font-family: var(--font-sans);
-  font-size: clamp(1.875rem, 3.6vw + 0.35rem, 44px);
+  font-size: var(--font-size-section-headline);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -53,6 +53,7 @@
 }
 
 .voices__quote-icon {
+  align-self: center;
   font-size: 1.75rem;
   color: var(--color-gold);
   flex-shrink: 0;

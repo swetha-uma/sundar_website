@@ -46,6 +46,10 @@
   /* Typography */
   --font-display: 'Poppins', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-section-label: 160%;
+  --font-size-section-headline: 180%;
+  --font-size-section-headline-compact: clamp(2.125rem, 4.25vw, 3.25rem);
+  --font-size-hero-headline: clamp(2.875rem, 5.5vw, 3.875rem);
 
   /* Letter spacing & line height */
   --letter-spacing-heading: -2px;
@@ -57,18 +61,20 @@
 
   /* Layout */
   --max-width: 1280px;
+  --hero-portrait-width: clamp(260px, 30vw, 380px);
+  --hero-portrait-aspect: 5 / 6;
+  --hero-portrait-max-height: 520px;
+  --hero-portrait-radius: 1rem;
+  --hero-portrait-border: 2px;
   --nav-height: 80px;
   --radius-pill: 999px;
   --radius-lg: 16px;
   --radius-xl: 20px;
 
-  /* Navbar glass */
+  /* Navbar */
   --navbar-height: 80px;
-  --navbar-bg: rgba(5, 10, 25, 0.42);
-  --navbar-bg-scrolled: rgba(5, 10, 25, 0.65);
-  --navbar-blur: 20px;
-  --navbar-border: rgba(255, 255, 255, 0.06);
-  --navbar-border-scrolled: rgba(255, 255, 255, 0.1);
+  --navbar-bg: var(--color-bg-deep);
+  --navbar-border: rgba(255, 255, 255, 0.1);
   --transition-nav: 0.3s ease;
 
   /* Effects */

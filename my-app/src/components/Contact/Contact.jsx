@@ -18,7 +18,7 @@ function Contact() {
         <div className="contact__info">
           <span className="contact__label">{contactSection.label}</span>
           <h2 className="contact__headline">
-            {contactSection.headlinePrefix}{' '}
+            <span className="contact__headline-line">{contactSection.headlinePrefix}</span>
             <span className="contact__headline-accent">{contactSection.headlineAccent}</span>
           </h2>
           <p className="contact__description">{contactSection.description}</p>

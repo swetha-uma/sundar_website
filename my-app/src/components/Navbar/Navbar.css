@@ -6,21 +6,9 @@
   width: 100%;
   z-index: 1000;
   transform: translateZ(0);
-  will-change: background-color, border-color, box-shadow;
   padding: 1.125rem 0;
   background-color: var(--navbar-bg);
   border-bottom: 1px solid var(--navbar-border);
-  backdrop-filter: blur(var(--navbar-blur));
-  -webkit-backdrop-filter: blur(var(--navbar-blur));
-  transition:
-    background-color var(--transition-nav),
-    border-color var(--transition-nav),
-    box-shadow var(--transition-nav);
-}
-
-.navbar--scrolled {
-  background-color: var(--navbar-bg-scrolled);
-  border-bottom-color: var(--navbar-border-scrolled);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
 }
 
@@ -152,9 +140,8 @@
     gap: 2rem;
     padding: 2rem;
     background: rgba(5, 10, 25, 0.95);
-    border-left: 1px solid var(--navbar-border-scrolled);
-    backdrop-filter: blur(var(--navbar-blur));
-    -webkit-backdrop-filter: blur(var(--navbar-blur));
+    border-left: 1px solid var(--navbar-border);
+    background: var(--navbar-bg);
     transform: translateX(100%);
     transition: transform var(--transition-nav);
   }
