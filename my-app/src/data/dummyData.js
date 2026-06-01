@@ -19,7 +19,9 @@ export const heroContent = {
   description:
     '25 years. 4 continents. One unwavering mission — engineering the next generation of AI-driven cybersecurity, governance, and resilience.',
   primaryCta: 'Request an engagement',
+  primaryCtaHref: '#contact',
   secondaryCta: 'Executive bio',
+  secondaryCtaHref: '#about',
   imageLabel: 'CURRENTLY BUILDING',
   imageSubtitle: 'SITCA Pty Ltd - iCISO LLC',
 }

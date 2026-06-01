@@ -35,10 +35,12 @@ function Home() {
             <p className="hero__description">{heroContent.description}</p>
 
             <div className="hero__actions">
-              <Button variant="primary" showArrow>
+              <Button variant="primary" showArrow href={heroContent.primaryCtaHref}>
                 {heroContent.primaryCta}
               </Button>
-              <Button variant="outline">{heroContent.secondaryCta}</Button>
+              <Button variant="outline" href={heroContent.secondaryCtaHref}>
+                {heroContent.secondaryCta}
+              </Button>
             </div>
 
             <StatsBar className="hero__stats" />
