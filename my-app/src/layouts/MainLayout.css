@@ -48,7 +48,17 @@
   filter: blur(90px);
 }
 
-.main-layout > *:not(.main-layout__grid):not(.main-layout__glow) {
+.main-layout > *:not(.main-layout__grid):not(.main-layout__glow):not(.navbar) {
   position: relative;
   z-index: 1;
+}
+
+/* Keep header pinned — layout rule must not override Navbar fixed positioning */
+.main-layout > .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
 }

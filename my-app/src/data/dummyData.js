@@ -63,7 +63,7 @@ export const executiveSummary = {
   infoCards: [
     {
       label: 'BASED',
-      value: 'Sydney · Houston',
+      value: 'Tamil Nadu · India',
     },
     {
       label: 'FOCUS',

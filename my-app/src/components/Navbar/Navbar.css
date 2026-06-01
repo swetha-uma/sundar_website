@@ -5,6 +5,8 @@
   right: 0;
   width: 100%;
   z-index: 1000;
+  transform: translateZ(0);
+  will-change: background-color, border-color, box-shadow;
   padding: 1.125rem 0;
   background-color: var(--navbar-bg);
   border-bottom: 1px solid var(--navbar-border);

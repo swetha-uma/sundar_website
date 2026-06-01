@@ -11,6 +11,9 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--nav-height) + 1.5rem);
+  background-color: var(--color-bg);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 #about,
@@ -91,4 +94,39 @@ img {
 
 .hover-lift:hover {
   transform: translateY(var(--lift-offset));
+}
+
+/* —— Premium custom scrollbar —— */
+
+html::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: var(--scrollbar-radius);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-radius);
+  box-shadow: var(--scrollbar-glow);
+  transition:
+    background var(--transition-scrollbar),
+    box-shadow var(--transition-scrollbar);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+  box-shadow: var(--scrollbar-glow-hover);
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-thumb-hover);
+  box-shadow: var(--scrollbar-glow-hover);
+}
+
+html::-webkit-scrollbar-corner {
+  background: var(--color-bg);
 }

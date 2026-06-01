@@ -92,4 +92,14 @@
   );
   --transition: 0.25s ease;
   --lift-offset: -4px;
+
+  /* Scrollbar */
+  --scrollbar-width: 8px;
+  --scrollbar-radius: 20px;
+  --scrollbar-track: #111827;
+  --scrollbar-thumb: #d4af37;
+  --scrollbar-thumb-hover: #e6c55a;
+  --scrollbar-glow: 0 0 12px rgba(212, 175, 55, 0.35);
+  --scrollbar-glow-hover: 0 0 16px rgba(230, 197, 90, 0.5);
+  --transition-scrollbar: 0.3s ease;
 }
