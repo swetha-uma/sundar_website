@@ -7,6 +7,7 @@
   padding: 4rem 2rem 5rem;
   background-color: var(--color-bg-deep);
   font-size: 1rem;
+  overflow-x: clip;
 }
 
 .executive-summary__about .executive-summary__intro {
@@ -14,20 +15,24 @@
 }
 
 .executive-summary__about .executive-summary__label {
-  font-size: var(--font-size-section-headline);
+  font-size: clamp(1.125rem, 4.5vw, 1.75rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: var(--letter-spacing-label);
+  line-height: 1.15;
+  letter-spacing: 0.12em;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
 
 .executive-summary__about .executive-summary__headline {
-  gap: 0;
+  gap: 0.25rem;
   font-family: var(--font-sans);
-  font-size: var(--font-size-section-headline);
+  font-size: clamp(1.5rem, 5.5vw, 2.25rem);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--color-text-primary);
+  max-width: 100%;
 }
 
 .executive-summary__about .executive-summary__headline-line {
@@ -78,13 +83,15 @@
 
 .executive-summary__label {
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.125rem, 4.5vw, 1.75rem);
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--color-gold);
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .executive-summary__headline {
@@ -109,23 +116,26 @@
 }
 
 .executive-summary__achievements-intro .executive-summary__label {
-  font-size: var(--font-size-section-headline);
+  font-size: clamp(1.125rem, 4.5vw, 1.75rem);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.15;
   color: var(--color-gold);
   text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-label);
-  white-space: nowrap;
+  letter-spacing: 0.12em;
+  white-space: normal;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .executive-summary__achievements-intro .executive-summary__timeline-headline {
   font-family: var(--font-sans);
-  font-size: var(--font-size-section-headline);
+  font-size: clamp(1.5rem, 5.5vw, 2.25rem);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--color-text-primary);
   text-transform: none;
+  max-width: 100%;
 }
 
 .executive-summary__details {
@@ -251,10 +261,31 @@
   }
 
   .executive-summary__about {
-    padding: 3rem 1.25rem 4rem;
+    padding: 3rem 1rem 4rem;
+  }
+
+  .executive-summary__inner {
+    min-width: 0;
+  }
+
+  .executive-summary__intro,
+  .executive-summary__achievements-intro {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .executive-summary__about .executive-summary__label,
+  .executive-summary__achievements-intro .executive-summary__label {
+    font-size: clamp(1rem, 5vw, 1.375rem);
+    letter-spacing: 0.1em;
+  }
+
+  .executive-summary__about .executive-summary__headline,
+  .executive-summary__achievements-intro .executive-summary__timeline-headline {
+    font-size: clamp(1.375rem, 6vw, 1.75rem);
   }
 
   .executive-summary__achievements-inner {
-    padding: 0 1.25rem;
+    padding: 0 1rem;
   }
 }

@@ -97,23 +97,25 @@
   flex-direction: column;
   gap: 0.25rem;
   font-family: var(--font-sans);
-  font-size: var(--font-size-section-headline-compact);
-  font-weight: 700;
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-heading);
+  font-size: var(--font-size-section-headline);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
   color: var(--color-text-primary);
   max-width: 18ch;
 }
 
-.contact__headline-line {
+.contact__headline-line,
+.contact__headline-accent {
   display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 
 .contact__headline-accent {
-  display: block;
-  font-family: var(--font-sans);
   font-style: italic;
-  font-weight: 500;
   color: var(--color-gold);
 }
 
@@ -335,8 +337,17 @@
     margin-top: 0.25rem;
   }
 
+  .contact__info {
+    font-size: 1rem;
+  }
+
+  .contact__label {
+    font-size: var(--font-size-section-label);
+  }
+
   .contact__headline {
     max-width: 100%;
+    font-size: var(--font-size-section-headline);
   }
 
   .contact__description {
@@ -359,13 +370,17 @@
     box-sizing: border-box;
   }
 
+  .contact__info {
+    font-size: 1rem;
+  }
+
   .contact__label {
-    font-size: 15px;
+    font-size: var(--font-size-section-label);
     letter-spacing: var(--letter-spacing-label);
   }
 
   .contact__headline {
-    font-size: clamp(1.5rem, 6.5vw, 2rem);
+    font-size: var(--font-size-section-headline);
     max-width: 100%;
   }
 
