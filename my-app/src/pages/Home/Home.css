@@ -117,6 +117,7 @@
 
 .hero__headline-prefix {
   font-weight: 600;
+  color: var(--color-text-primary);
 }
 
 .hero__headline-accent {

@@ -24,7 +24,7 @@ function Home() {
             </div>
 
             <h1 className="hero__headline">
-              <span className="hero__headline-prefix text-gradient-muted">
+              <span className="hero__headline-prefix">
                 {heroContent.headlinePrefix}
               </span>
               <span className="hero__headline-accent text-gradient-gold">

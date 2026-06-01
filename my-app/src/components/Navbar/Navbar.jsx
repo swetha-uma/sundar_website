@@ -19,19 +19,21 @@ function Navbar() {
         </a>
 
         <nav className={`navbar__nav ${isMenuOpen ? 'navbar__nav--open' : ''}`}>
-          <ul className="navbar__links">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className={`navbar__link ${activeHash === link.href ? 'navbar__link--active' : ''}`}
-                  onClick={() => handleNavClick(link.href)}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="navbar__nav-body">
+            <ul className="navbar__links">
+              {navLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className={`navbar__link ${activeHash === link.href ? 'navbar__link--active' : ''}`}
+                    onClick={() => handleNavClick(link.href)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
           <Button
             variant="ghost-gold"
             className="navbar__engage-mobile"
