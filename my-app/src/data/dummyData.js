@@ -1,6 +1,6 @@
 export const siteInfo = {
   name: 'Senthil Muthu',
-  title: 'EXECUTIVE OFFICE',
+  title: 'Executive Leadership',
   initials: 'SM',
 }
 
