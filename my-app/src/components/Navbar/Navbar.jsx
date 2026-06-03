@@ -18,6 +18,16 @@ function Navbar() {
           </span>
         </a>
 
+        <button
+          type="button"
+          className="navbar__toggle"
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMenuOpen}
+        >
+          {isMenuOpen ? <HiX /> : <HiMenu />}
+        </button>
+
         <nav className={`navbar__nav ${isMenuOpen ? 'navbar__nav--open' : ''}`}>
           <div className="navbar__nav-body">
             <ul className="navbar__links">
@@ -36,32 +46,13 @@ function Navbar() {
           </div>
           <Button
             variant="ghost-gold"
-            className="navbar__engage-mobile"
+            className="navbar__engage"
             href="#contact"
             onClick={() => handleNavClick('#contact')}
           >
             Engage
           </Button>
         </nav>
-
-        <Button
-          variant="ghost-gold"
-          className="navbar__engage"
-          href="#contact"
-          onClick={() => handleNavClick('#contact')}
-        >
-          Engage
-        </Button>
-
-        <button
-          type="button"
-          className="navbar__toggle"
-          onClick={toggleMenu}
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={isMenuOpen}
-        >
-          {isMenuOpen ? <HiX /> : <HiMenu />}
-        </button>
       </div>
     </header>
   )

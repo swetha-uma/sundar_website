@@ -1,6 +1,7 @@
 .voices {
+  width: 100%;
   padding: 4rem 2rem 5rem;
-  background-color: var(--color-bg);
+  background-color: #0b0f19;
 }
 
 .voices__inner {

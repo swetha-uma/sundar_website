@@ -1,7 +1,11 @@
 :root {
-  /* Backgrounds */
+  /* Backgrounds — alternating section palette (solid only) */
   --color-bg: #0b0f19;
   --color-bg-deep: #070a12;
+  --color-section-1: #0b0f19;
+  --color-section-2: #070a12;
+  --color-section-dark: #0b0f19;
+  --color-section-navy: #070a12;
   --color-bg-card: #13182a;
   --color-border: rgba(255, 255, 255, 0.08);
   --color-glow-blue: oklch(0.28 0.04 250 / 0.6);
@@ -73,7 +77,7 @@
 
   /* Navbar */
   --navbar-height: 80px;
-  --navbar-bg: var(--color-bg-deep);
+  --navbar-bg: var(--color-section-2);
   --navbar-border: rgba(255, 255, 255, 0.1);
   --transition-nav: 0.3s ease;
 

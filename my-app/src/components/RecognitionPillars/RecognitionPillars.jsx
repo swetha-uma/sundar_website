@@ -4,7 +4,7 @@ import './RecognitionPillars.css'
 
 function RecognitionPillars() {
   return (
-    <section className="recognition-pillars" aria-label="Recognition and impact">
+    <section className="recognition-pillars" id="recognition" aria-label="Recognition and impact">
       <div className="recognition-pillars__inner">
         <div className="recognition-pillars__header">
           <div className="recognition-pillars__intro">

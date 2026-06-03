@@ -3,7 +3,6 @@ import Button from '../../components/Button/Button'
 import Contact from '../../components/Contact/Contact'
 import CredentialTicker from '../../components/CredentialTicker/CredentialTicker'
 import ExecutiveSummary from '../../components/ExecutiveSummary/ExecutiveSummary'
-import LeadershipHighlights from '../../components/LeadershipHighlights/LeadershipHighlights'
 import RecognitionPillars from '../../components/RecognitionPillars/RecognitionPillars'
 import Voices from '../../components/Voices/Voices'
 import StatsBar from '../../components/StatsBar/StatsBar'
@@ -68,7 +67,6 @@ function Home() {
 
       <CredentialTicker />
       <ExecutiveSummary />
-      <LeadershipHighlights />
       <RecognitionPillars />
       <Voices />
       <Contact />

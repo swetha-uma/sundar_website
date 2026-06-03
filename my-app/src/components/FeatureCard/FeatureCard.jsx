@@ -9,7 +9,7 @@ import {
 } from 'react-icons/hi'
 import './FeatureCard.css'
 
-const iconMap = {
+export const featureIconMap = {
   globe: HiGlobeAlt,
   chip: HiChip,
   shield: HiShieldCheck,
@@ -19,6 +19,8 @@ const iconMap = {
   shieldCheck: HiShieldCheck,
   award: HiStar,
 }
+
+const iconMap = featureIconMap
 
 function FeatureCard({ icon, title, description, className = '' }) {
   const IconComponent = iconMap[icon] || HiShieldCheck

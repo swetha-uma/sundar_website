@@ -1,6 +1,7 @@
 .contact {
+  width: 100%;
   padding: 5rem 2rem 6rem;
-  background-color: var(--color-bg-deep);
+  background-color: #070a12;
 }
 
 .contact__inner {

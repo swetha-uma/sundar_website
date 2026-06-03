@@ -11,14 +11,17 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--nav-height) + 1.5rem);
-  background-color: var(--color-bg);
+  background-color: var(--color-section-1);
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 #about,
-#achievements,
+#pillars,
+#selected-engagements,
 #highlights,
+#achievements,
+#recognition,
 #voices,
 #contact {
   scroll-margin-top: calc(var(--nav-height) + 1.5rem);
@@ -27,7 +30,7 @@ html {
 body {
   font-family: var(--font-sans);
   font-weight: 400;
-  background-color: var(--color-bg-deep);
+  background-color: var(--color-section-1);
   color: var(--color-text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;

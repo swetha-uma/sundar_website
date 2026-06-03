@@ -6,8 +6,11 @@ export const siteInfo = {
 
 export const navLinks = [
   { label: 'About', href: '#about' },
-  { label: 'Achievements', href: '#achievements' },
+  { label: 'Pillars', href: '#pillars' },
+  { label: 'Engagements', href: '#selected-engagements' },
   { label: 'Highlights', href: '#highlights' },
+  { label: 'Achievements', href: '#achievements' },
+  { label: 'Recognition', href: '#recognition' },
   { label: 'Voices', href: '#voices' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -53,25 +56,43 @@ export const credentials = [
   'NV1 CLEARANCE',
 ]
 
-/** ABOUT (#about) — narrative + info cards + career timeline */
+/** ABOUT (#about) — executive profile + career timeline */
 export const executiveSummary = {
   label: 'EXECUTIVE SUMMARY',
   headlineLine1: 'A career in service',
   headlineLine2: 'of digital trust.',
-  achievementsLabel: 'ACHIEVEMENTS',
-  timelineHeadline: 'A trajectory of impact.',
-  description:
-    'Senthil Muthu is a global cybersecurity strategist, former CISO, and the founder of SITCA Pty Ltd and iCISO LLC.',
-  infoCards: [
+  intro:
+    'Global cybersecurity strategist, former CISO, and founder of SITCA Pty Ltd and iCISO LLC. Architecting unified NIS2, SOX, and NIST CSF programs across the United States, Germany, and China.',
+  statCards: [
+    { value: '25+', label: 'Years Experience', icon: 'award' },
+    { value: null, label: 'Global Cybersecurity Leader', icon: 'globe' },
+    { value: null, label: 'Founder & CISO', icon: 'badge' },
+    { value: null, label: 'AI-GRC & Zero Trust Specialist', icon: 'shield' },
+  ],
+  executiveHighlights: [
     {
-      label: 'BASED',
-      value: 'Tamil Nadu · India',
+      title: 'Enterprise CISO Leadership',
+      description:
+        'Head of Cybersecurity at Oxea Corporation — unifying NIS2, SOX, and NIST CSF across three continents.',
     },
     {
-      label: 'FOCUS',
-      value: 'AI-GRC · Zero Trust',
+      title: 'World-Defining Engagements',
+      description:
+        "Second-largest Azure migration at NAB, BHP transformation, and India's IRDAI-mandated CISO mandate at Chola MS.",
+    },
+    {
+      title: 'Government-Recognised Expertise',
+      description:
+        'Australian Distinguished Talent Visa (Subclass 858) and NV1 Top Secret clearance from the Department of Defence.',
+    },
+    {
+      title: 'Ventures & Thought Leadership',
+      description:
+        'Founder of SITCA Pty Ltd and iCISO LLC — Forbes Technology Council and IEEE Senior Member.',
     },
   ],
+  achievementsLabel: 'ACHIEVEMENTS',
+  timelineHeadline: 'A trajectory of impact.',
 }
 
 export const achievementMilestones = [
@@ -159,6 +180,201 @@ export const leadershipHighlights = {
       title: 'Leadership Pipeline',
       description:
         'Mentoring the next generation of CISOs and security architects globally.',
+    },
+  ],
+}
+
+export const leadershipPillars = {
+  label: 'LEADERSHIP PILLARS',
+  headline: 'Where executive presence meets engineering.',
+  items: [
+    {
+      number: '01',
+      title: 'Global Trust Architecture',
+      description:
+        'Security postures spanning 4 continents and 10+ regulatory regimes — NIS2, SOX, NIST CSF, APRA, IRDAI, and SOC frameworks.',
+    },
+    {
+      number: '02',
+      title: 'AI-Driven GRC Platform',
+      description:
+        'Two provisional patents in adaptive risk intelligence and AI/ML orchestration for governance, compliance, and enterprise resilience.',
+    },
+    {
+      number: '03',
+      title: 'Boardroom Authority',
+      description:
+        'Transforms regulatory complexity into board-level strategic decisions for CEOs, CIOs, CTOs, CISOs, and executive leadership teams.',
+    },
+    {
+      number: '04',
+      title: 'Zero Trust Execution',
+      description:
+        'Identity-first security models across hybrid cloud, multi-cloud, SCADA/ICS, OT environments, and enterprise ecosystems.',
+    },
+    {
+      number: '05',
+      title: 'Critical Infrastructure',
+      description:
+        'Deep expertise across energy, LNG, mining, banking, insurance, government, and national-scale critical infrastructure programs.',
+    },
+    {
+      number: '06',
+      title: 'Leadership Pipeline',
+      description:
+        'Mentoring future technology leaders, security architects, CISOs, and governance professionals across global organizations.',
+    },
+  ],
+}
+
+export const selectedEngagements = {
+  label: 'SELECTED ENGAGEMENTS',
+  headline: 'Fortune 500 & critical infrastructure.',
+  intro:
+    'Drawn from a 25-year career across the United States, Australia, India, the Netherlands, and the global operations of multinational banks, miners, energy producers and chemical manufacturers.',
+  items: [
+    {
+      period: '2026 – PRESENT',
+      timelineLabel: 'Oxea Corporation',
+      company: 'Oxea Corporation',
+      locations: 'USA • Germany • China',
+      role: 'Head of Cybersecurity (CISO)',
+      sector: 'Specialty Chemical Manufacturing — Critical Infrastructure',
+      challenge:
+        'Global oxo-chemicals manufacturer ($2B+ revenue) facing simultaneous NIS2 (EU), SOX (US), and NIST CSF obligations across three regulatory regimes with no unified compliance architecture.',
+      actions: [
+        'Architected unified NIS2 + SOX + NIST CSF 2.0 program across USA, Germany, China',
+        'Designed IT/OT Zero Trust controls across three plant countries',
+        'Established continuous audit lifecycle replacing reactive model',
+      ],
+      impact: [
+        '$2B+ revenue protected',
+        '1,500+ employees',
+        '60+ export markets',
+        '3 production countries',
+      ],
+    },
+    {
+      period: 'JUL 2025 – PRESENT',
+      timelineLabel: 'NextDecade',
+      company: 'NextDecade Corporation',
+      locations: 'Houston, TX',
+      role: 'Cybersecurity Architect & Strategic Advisor',
+      sector: 'LNG Export Infrastructure — Strategic US Commodity',
+      challenge:
+        'Multi-billion-dollar LNG export infrastructure required NERC CIP, MTSA, FERC, TSA Pipeline and SOX ITGC posture from a Level 1 maturity baseline.',
+      actions: [
+        'Established Architecture Review Board; reviewed 15+ IT/OT proposals',
+        'Deployed CASB, SEG, DLP; designed SOC-as-a-Service model',
+        'Mapped NERC CIP, MTSA, FERC, SOX, TSA compliance scope',
+      ],
+      impact: [
+        'Cyber maturity Level 1 → Level 3 (CMMI)',
+        'Unauthorized cloud access ↓ 65%',
+        'Phishing click-through 18% → 3%',
+        'MTTD 18h → 4h',
+        'MTTR 36h → 8h',
+        'Patch compliance 62% → 94%',
+      ],
+    },
+    {
+      period: 'JAN – MAY 2025',
+      timelineLabel: 'Sandfire Resources',
+      company: 'Sandfire Resources (via SITCA)',
+      locations: 'Australia • Botswana • Spain • USA',
+      role: 'ISMS Architect — NIST CSF 2.0',
+      sector: 'Global Mining',
+      challenge:
+        'Multi-jurisdiction miner lacking a unified ISMS; one of the first NIST CSF 2.0 implementations in APAC mining.',
+      actions: [
+        'Designed risk-based ISMS aligned to NIST CSF 2.0 and GDPR',
+        'Built BCP/BIA/DRP artifacts and executed DRP testing',
+        'Established KPI dashboard for board-level and investor reviews',
+      ],
+      impact: [
+        'First NIST CSF 2.0 ISMS across Sandfire',
+        '4 jurisdictions',
+        'Framework cited as industry benchmark',
+      ],
+    },
+    {
+      period: 'MAR – JUN 2021',
+      timelineLabel: 'Microsoft Australia – NAB',
+      company: 'Microsoft Australia — NAB Cloud Migration',
+      locations: 'Australia',
+      role: 'Cloud Security Architect / GRC Specialist',
+      sector: null,
+      challenge:
+        "National Australia Bank's 1,000 applications in 1,000 days migration to Azure/AWS with full APRA compliance.",
+      actions: [
+        'Led cybersecurity architecture representation across advisory engagements',
+        'Designed architecture review and approval process',
+        'Mapped every cloud deployment against APRA requirements',
+      ],
+      impact: [
+        '1,000+ applications migrated',
+        'Zero APRA compliance deviations',
+        'Zero critical audit findings',
+      ],
+    },
+    {
+      period: 'NOV 2018 – MAY 2020',
+      timelineLabel: 'BHP',
+      company: 'BHP (via Infosys)',
+      locations: 'Australia • Americas • Asia',
+      role: 'Enterprise Security Architect',
+      sector: null,
+      challenge:
+        '$50B-revenue, 80,000-employee global miner required enterprise security governance across IT and OT.',
+      actions: [
+        'Established Architecture Governance & Assurance group',
+        'Led senior cyber architects across multi-city footprint',
+        'Implemented Archer GRC and semi-automated assessment tooling',
+      ],
+      impact: [
+        'Operational + strategic cyber risk reduced by 40%',
+        'Outstanding Dedication Award (2020)',
+        'Governance framework replicated globally',
+      ],
+    },
+    {
+      period: 'SEP 2016 – OCT 2018',
+      timelineLabel: 'Chola MS',
+      company: 'Chola MS General Insurance',
+      locations: 'Chennai, India',
+      role: 'Chief Information Security Officer (CISO)',
+      sector: null,
+      challenge:
+        'First-ever CISO under IRDAI mandate. Maturity between Level 0–1 with no governance framework.',
+      actions: [
+        'Built full GRC program',
+        'Launched enterprise security awareness and board reporting',
+        'Established SOC and vendor risk assurance',
+      ],
+      impact: [
+        'IRDAI-appointed CISO',
+        'Maturity Level 0–1 → Repeatable Program',
+        'Board-grade cyber reporting',
+      ],
+    },
+    {
+      period: 'NOV 2003 – JUL 2006',
+      timelineLabel: 'Wipro – Standard Chartered',
+      company: 'Wipro — Standard Chartered Bank',
+      locations: 'APAC • EMEA • Americas',
+      role: 'Information Security Analyst',
+      sector: null,
+      challenge:
+        'Inconsistent cyber controls across 20+ global banking locations against SOX, Basel II and ISO 27001 obligations.',
+      actions: [
+        'Contributed to a unified global cybersecurity compliance framework',
+        'Led audit compliance across APAC, EMEA, Americas',
+        'Drove centralized reporting and SoD enforcement',
+      ],
+      impact: [
+        '20+ banking locations',
+        'Model adopted as Wipro BFSI best practice',
+      ],
     },
   ],
 }
