@@ -3,49 +3,16 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg-deep);
-  background-image: var(--gradient-glow-blue), var(--gradient-glow-gold), var(--gradient-page-bg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: var(--color-section-1);
   overflow-x: hidden;
 }
 
 .main-layout__grid {
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 
 .main-layout__glow {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(100px);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.main-layout__glow--top {
-  top: -18%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(920px, 95vw);
-  height: 480px;
-  background: var(--color-glow-blue);
-}
-
-.main-layout__glow--bottom-right {
-  bottom: -12%;
-  right: -6%;
-  width: min(640px, 70vw);
-  height: 560px;
-  background: var(--color-glow-gold);
-  filter: blur(90px);
+  display: none;
 }
 
 .main-layout > *:not(.main-layout__grid):not(.main-layout__glow):not(.navbar) {

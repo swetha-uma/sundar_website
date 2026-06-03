@@ -33,7 +33,7 @@ function useNavbar() {
     if (!isMenuOpen) return
 
     const handleResize = () => {
-      if (window.innerWidth > 900) {
+      if (window.innerWidth >= 1024) {
         setIsMenuOpen(false)
       }
     }

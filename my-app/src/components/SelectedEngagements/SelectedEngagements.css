@@ -1,0 +1,485 @@
+.selected-engagements {
+  padding: 64px 2rem 3rem;
+  background-color: var(--color-section-1);
+}
+
+.selected-engagements__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* —— Section header —— */
+
+.selected-engagements__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.selected-engagements__label {
+  font-family: var(--font-display);
+  font-size: var(--font-size-section-label);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-label);
+  color: var(--color-gold);
+  text-transform: uppercase;
+}
+
+.selected-engagements__header-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  column-gap: clamp(2rem, 5vw, 4rem);
+  row-gap: 1.25rem;
+  align-items: center;
+}
+
+.selected-engagements__headline {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-section-headline);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+  max-width: min(28rem, 100%);
+}
+
+.selected-engagements__description {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--color-text-muted);
+  max-width: 36rem;
+  justify-self: end;
+  align-self: center;
+}
+
+/* —— Editorial case studies —— */
+
+.selected-engagements__studies {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.selected-engagements__study {
+  padding: clamp(1.75rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2rem);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.selected-engagements__study:hover {
+  border-color: var(--color-border-gold);
+  background-color: rgba(19, 24, 42, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.22),
+    0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.selected-engagements__study-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 35%) minmax(0, 65%);
+  column-gap: clamp(2.5rem, 5vw, 4.5rem);
+  row-gap: 2rem;
+  align-items: stretch;
+}
+
+/* —— Left column: identity —— */
+
+.selected-engagements__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+  padding-right: 1rem;
+  container-type: inline-size;
+  container-name: engagement-meta;
+}
+
+.selected-engagements__period {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.selected-engagements__period-icon {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  color: var(--color-gold);
+}
+
+.selected-engagements__company {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.625rem, 2.8vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.selected-engagements__role {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--color-text-primary);
+}
+
+.selected-engagements__locations {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.selected-engagements__sector-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.selected-engagements__sector-line {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* —— Leadership snapshot: open metrics strip —— */
+
+.selected-engagements__snapshot {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.selected-engagements__snapshot-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.selected-engagements__snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.selected-engagements__snapshot-metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  min-width: 0;
+  min-height: 4.25rem;
+  padding: 0.875rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+}
+
+.selected-engagements__snapshot-value {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-gold);
+  text-wrap: balance;
+}
+
+.selected-engagements__snapshot-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+  text-wrap: balance;
+}
+
+/* Wide meta column: horizontal 4-up strip */
+@container engagement-meta (min-width: 34rem) {
+  .selected-engagements__snapshot-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .selected-engagements__snapshot-metric {
+    min-height: 4.5rem;
+    padding: 0 1rem 0 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .selected-engagements__snapshot-metric:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .selected-engagements__snapshot-value {
+    font-size: 1.375rem;
+    line-height: 1.1;
+  }
+}
+
+/* —— Right column: narrative —— */
+
+.selected-engagements__narrative {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0;
+}
+
+.selected-engagements__block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selected-engagements__block-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.selected-engagements__divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.selected-engagements__challenge-text {
+  margin: 0;
+  max-width: 65ch;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: var(--letter-spacing-paragraph);
+  color: var(--color-text-muted);
+}
+
+.selected-engagements__actions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.selected-engagements__actions-list li {
+  position: relative;
+  padding-left: 1.125rem;
+  max-width: 65ch;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.selected-engagements__actions-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(148, 163, 184, 0.85);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* —— Impact: executive highlight —— */
+
+.selected-engagements__block--impact .selected-engagements__block-title {
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.selected-engagements__impact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selected-engagements__impact-list li {
+  position: relative;
+  padding-left: 1.125rem;
+  max-width: 52ch;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.selected-engagements__impact-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-gold);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* —— Responsive —— */
+
+@media (max-width: 900px) {
+  .selected-engagements__header-body {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .selected-engagements__headline {
+    max-width: none;
+  }
+
+  .selected-engagements__description {
+    max-width: 100%;
+    justify-self: stretch;
+    align-self: stretch;
+  }
+
+  .selected-engagements__study-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 2rem;
+  }
+
+  .selected-engagements__meta {
+    height: auto;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .selected-engagements__snapshot {
+    margin-top: 1.25rem;
+  }
+
+  .selected-engagements__snapshot-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .selected-engagements__snapshot-metric {
+    min-height: 4.5rem;
+    padding: 0 1rem 0 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .selected-engagements__snapshot-metric:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .selected-engagements__snapshot-value {
+    font-size: 1.375rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 768px) {
+  .selected-engagements__headline {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .selected-engagements {
+    padding: 40px 1.25rem 2.5rem;
+  }
+
+  .selected-engagements__inner {
+    gap: 2.5rem;
+  }
+
+  .selected-engagements__study {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .selected-engagements__narrative {
+    gap: 1.75rem;
+  }
+
+  .selected-engagements__company {
+    font-size: 1.5rem;
+  }
+
+  .selected-engagements__challenge-text,
+  .selected-engagements__actions-list li {
+    font-size: 14px;
+  }
+
+  .selected-engagements__impact-list li {
+    font-size: 1rem;
+  }
+
+  .selected-engagements__snapshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .selected-engagements__snapshot-metric {
+    min-height: auto;
+    padding: 0.875rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-lg);
+    border-right: none;
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  .selected-engagements__snapshot-value {
+    font-size: 1.125rem;
+  }
+
+  .selected-engagements__snapshot-label {
+    font-size: 0.75rem;
+  }
+}

@@ -5,6 +5,7 @@
 .hero {
   position: relative;
   padding: calc(var(--nav-height) + 1.5rem) 0 3rem;
+  background-color: var(--color-section-1);
 }
 
 .hero__inner {

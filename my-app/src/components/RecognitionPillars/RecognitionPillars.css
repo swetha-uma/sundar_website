@@ -1,6 +1,7 @@
 .recognition-pillars {
+  width: 100%;
   padding: 2.5rem 2rem 4rem;
-  background-color: var(--color-bg-deep);
+  background-color: var(--color-section-1);
 }
 
 .recognition-pillars__inner {
