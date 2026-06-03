@@ -6,7 +6,8 @@ import useContact from './hooks/useContact'
 import './Contact.css'
 
 function Contact() {
-  const { form, errors, isSubmitted, updateField, handleSubmit } = useContact()
+  const { form, errors, isSubmitted, isSubmitting, submitError, updateField, handleSubmit } =
+    useContact()
 
   return (
     <section className="contact" id="contact">
@@ -116,8 +117,20 @@ function Contact() {
                 {errors.message && <span className="contact__error">{errors.message}</span>}
               </div>
 
-              <Button type="submit" variant="primary" showArrow className="contact__submit">
-                {contactSection.submitLabel}
+              {submitError && (
+                <p className="contact__error contact__error--form" role="alert">
+                  {submitError}
+                </p>
+              )}
+
+              <Button
+                type="submit"
+                variant="primary"
+                showArrow
+                className="contact__submit"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending…' : contactSection.submitLabel}
               </Button>
             </form>
           )}

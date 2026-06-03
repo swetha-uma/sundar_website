@@ -89,3 +89,10 @@ a.btn {
 .btn__arrow {
   font-size: 1.125rem;
 }
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  pointer-events: none;
+}
