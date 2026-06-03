@@ -519,7 +519,7 @@ export const contactSection = {
   headlineAccent: 'CISO chair.',
   description:
     'Advisory, board briefings, keynote speaking, and AI-GRC platform partnerships.',
-  email: 'hello@senthilmuthu.com',
+  email: 'muthu.senthil@gmail.com',
   linkedIn: '/in/senthilmuthu',
   offices: 'Sydney, Australia · Houston, Texas',
   formPlaceholders: {
@@ -534,5 +534,5 @@ export const footerContent = {
   copyright: '© 2026 Senthil Muthu — All rights reserved.',
   tagline: 'Securing systems. Securing futures.',
   linkedInUrl: 'https://www.linkedin.com/in/senthilmuthu',
-  email: 'hello@senthilmuthu.com',
+  email: 'muthu.senthil@gmail.com',
 }

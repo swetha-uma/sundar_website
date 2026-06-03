@@ -9,6 +9,7 @@ function Button({
   className = '',
   href,
   onClick,
+  disabled = false,
 }) {
   const classNames = ['btn', `btn--${variant}`, className].filter(Boolean).join(' ')
   const content = (
@@ -28,7 +29,7 @@ function Button({
   }
 
   return (
-    <button type={type} className={classNames} onClick={onClick}>
+    <button type={type} className={classNames} onClick={onClick} disabled={disabled}>
       {content}
     </button>
   )

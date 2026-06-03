@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { submitContactInquiry } from '../../../services/contactInquiryService'
 
 const initialForm = {
   name: '',
@@ -9,11 +10,14 @@ const initialForm = {
 function useContact() {
   const [form, setForm] = useState(initialForm)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [errors, setErrors] = useState({})
+  const [submitError, setSubmitError] = useState('')
 
   const updateField = (fieldName, value) => {
     setForm((previous) => ({ ...previous, [fieldName]: value }))
     setErrors((previous) => ({ ...previous, [fieldName]: '' }))
+    setSubmitError('')
   }
 
   const validate = () => {
@@ -37,21 +41,42 @@ function useContact() {
     return Object.keys(nextErrors).length === 0
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
 
     if (!validate()) {
       return
     }
 
-    setIsSubmitted(true)
-    setForm(initialForm)
+    setIsSubmitting(true)
+    setSubmitError('')
+
+    try {
+      await submitContactInquiry({
+        name: form.name.trim(),
+        email: form.email.trim(),
+        message: form.message.trim(),
+      })
+
+      setIsSubmitted(true)
+      setForm(initialForm)
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : 'Unable to send your inquiry. Please try again or email us directly.'
+      )
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return {
     form,
     errors,
     isSubmitted,
+    isSubmitting,
+    submitError,
     updateField,
     handleSubmit,
   }
