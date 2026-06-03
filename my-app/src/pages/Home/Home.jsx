@@ -13,7 +13,7 @@ import './Home.css'
 function Home() {
   return (
     <main className="home">
-      <section className="hero">
+      <section className="hero" id="home">
         <div className="hero__inner">
           <div className="hero__content">
             <div className="hero__badge glass">
