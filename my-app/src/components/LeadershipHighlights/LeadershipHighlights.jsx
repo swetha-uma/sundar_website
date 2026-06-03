@@ -6,13 +6,13 @@ function LeadershipHighlights() {
   return (
     <section className="leadership-highlights" id="highlights">
       <div className="leadership-highlights__inner">
-        <div className="leadership-highlights__header">
-          <div className="leadership-highlights__intro">
-            <span className="leadership-highlights__label">{leadershipHighlights.label}</span>
+        <header className="leadership-highlights__header">
+          <span className="leadership-highlights__label">{leadershipHighlights.label}</span>
+          <div className="leadership-highlights__header-body">
             <h2 className="leadership-highlights__headline">{leadershipHighlights.headline}</h2>
+            <p className="leadership-highlights__description">{leadershipHighlights.description}</p>
           </div>
-          <p className="leadership-highlights__description">{leadershipHighlights.description}</p>
-        </div>
+        </header>
 
         <div className="leadership-highlights__grid">
           {leadershipHighlights.items.map((item) => (

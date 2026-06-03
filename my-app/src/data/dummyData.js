@@ -12,7 +12,6 @@ export const navLinks = [
   { label: 'Achievements', href: '#achievements' },
   { label: 'Recognition', href: '#recognition' },
   { label: 'Voices', href: '#voices' },
-  { label: 'Contact', href: '#contact' },
 ]
 
 export const heroContent = {
@@ -189,40 +188,84 @@ export const leadershipPillars = {
   headline: 'Where executive presence meets engineering.',
   items: [
     {
-      number: '01',
+      icon: 'globe',
       title: 'Global Trust Architecture',
       description:
         'Security postures spanning 4 continents and 10+ regulatory regimes — NIS2, SOX, NIST CSF, APRA, IRDAI, and SOC frameworks.',
     },
     {
-      number: '02',
+      icon: 'chip',
       title: 'AI-Driven GRC Platform',
       description:
         'Two provisional patents in adaptive risk intelligence and AI/ML orchestration for governance, compliance, and enterprise resilience.',
     },
     {
-      number: '03',
+      icon: 'shield',
       title: 'Boardroom Authority',
       description:
         'Transforms regulatory complexity into board-level strategic decisions for CEOs, CIOs, CTOs, CISOs, and executive leadership teams.',
     },
     {
-      number: '04',
+      icon: 'badge',
       title: 'Zero Trust Execution',
       description:
         'Identity-first security models across hybrid cloud, multi-cloud, SCADA/ICS, OT environments, and enterprise ecosystems.',
     },
     {
-      number: '05',
+      icon: 'building',
       title: 'Critical Infrastructure',
       description:
         'Deep expertise across energy, LNG, mining, banking, insurance, government, and national-scale critical infrastructure programs.',
     },
     {
-      number: '06',
+      icon: 'users',
       title: 'Leadership Pipeline',
       description:
         'Mentoring future technology leaders, security architects, CISOs, and governance professionals across global organizations.',
+    },
+  ],
+}
+
+export const quantifiableImpact = {
+  label: 'QUANTIFIABLE IMPACT',
+  headline: 'Measured outcomes at enterprise scale.',
+  metrics: [
+    {
+      value: '$50B+',
+      description:
+        'Combined annual revenue protected across BHP, Oxea & NextDecade portfolios.',
+    },
+    {
+      value: '1,000+',
+      description:
+        'Applications migrated to Azure/AWS with zero compliance deviations.',
+    },
+    {
+      value: '80,000+',
+      description: 'Employees safeguarded under enterprise security architecture.',
+    },
+    {
+      value: '1.7M',
+      description:
+        'Citizen/voter records protected through critical infrastructure security programs.',
+    },
+    {
+      value: '↓ 40%',
+      description:
+        'Operational and strategic cyber risk reduction across enterprise environments.',
+    },
+    {
+      value: '↓ 65%',
+      description:
+        'Unauthorized cloud access reduced through CASB and Zero Trust controls.',
+    },
+    {
+      value: '↓ 18h → 4h',
+      description: 'Mean Time To Detect (MTTD) improvement across critical environments.',
+    },
+    {
+      value: '100%',
+      description: 'Regulatory compliance achievement in inaugural CISO mandates.',
     },
   ],
 }
@@ -253,6 +296,12 @@ export const selectedEngagements = {
         '60+ export markets',
         '3 production countries',
       ],
+      leadershipSnapshot: [
+        { label: 'Revenue Protected', value: '$2B+' },
+        { label: 'Employees Impacted', value: '1,500+' },
+        { label: 'Global Regions', value: '3' },
+        { label: 'Export Markets', value: '60+' },
+      ],
     },
     {
       period: 'JUL 2025 – PRESENT',
@@ -276,6 +325,12 @@ export const selectedEngagements = {
         'MTTR 36h → 8h',
         'Patch compliance 62% → 94%',
       ],
+      leadershipSnapshot: [
+        { label: 'Cyber Maturity', value: 'Level 3 (CMMI)' },
+        { label: 'Cloud Risk Reduced', value: '65%' },
+        { label: 'MTTD Improvement', value: '18h → 4h' },
+        { label: 'Patch Compliance', value: '94%' },
+      ],
     },
     {
       period: 'JAN – MAY 2025',
@@ -295,6 +350,12 @@ export const selectedEngagements = {
         'First NIST CSF 2.0 ISMS across Sandfire',
         '4 jurisdictions',
         'Framework cited as industry benchmark',
+      ],
+      leadershipSnapshot: [
+        { label: 'NIST CSF 2.0 ISMS', value: 'First in APAC' },
+        { label: 'Jurisdictions', value: '4' },
+        { label: 'Industry Recognition', value: 'Benchmark' },
+        { label: 'Board Reporting', value: 'KPI Dashboard' },
       ],
     },
     {
@@ -316,6 +377,12 @@ export const selectedEngagements = {
         'Zero APRA compliance deviations',
         'Zero critical audit findings',
       ],
+      leadershipSnapshot: [
+        { label: 'Applications Migrated', value: '1,000+' },
+        { label: 'APRA Compliance', value: 'Zero Deviations' },
+        { label: 'Critical Findings', value: 'Zero' },
+        { label: 'Cloud Scope', value: 'Azure / AWS' },
+      ],
     },
     {
       period: 'NOV 2018 – MAY 2020',
@@ -335,6 +402,12 @@ export const selectedEngagements = {
         'Operational + strategic cyber risk reduced by 40%',
         'Outstanding Dedication Award (2020)',
         'Governance framework replicated globally',
+      ],
+      leadershipSnapshot: [
+        { label: 'Cyber Risk Reduced', value: '40%' },
+        { label: 'Enterprise Scale', value: '$50B Revenue' },
+        { label: 'Workforce Scope', value: '80,000+' },
+        { label: 'Global Footprint', value: 'Multi-City' },
       ],
     },
     {
@@ -356,6 +429,12 @@ export const selectedEngagements = {
         'Maturity Level 0–1 → Repeatable Program',
         'Board-grade cyber reporting',
       ],
+      leadershipSnapshot: [
+        { label: 'Regulatory Mandate', value: 'IRDAI CISO' },
+        { label: 'Program Maturity', value: 'Repeatable' },
+        { label: 'GRC Program', value: 'Full Scope' },
+        { label: 'Board Reporting', value: 'Established' },
+      ],
     },
     {
       period: 'NOV 2003 – JUL 2006',
@@ -374,6 +453,12 @@ export const selectedEngagements = {
       impact: [
         '20+ banking locations',
         'Model adopted as Wipro BFSI best practice',
+      ],
+      leadershipSnapshot: [
+        { label: 'Banking Locations', value: '20+' },
+        { label: 'Global Regions', value: 'APAC · EMEA · Americas' },
+        { label: 'Compliance Scope', value: 'SOX · Basel II' },
+        { label: 'Industry Model', value: 'Wipro Best Practice' },
       ],
     },
   ],

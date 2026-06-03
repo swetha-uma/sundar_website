@@ -1,6 +1,7 @@
 import { featureIconMap } from '../FeatureCard/FeatureCard'
 import LeadershipHighlights from '../LeadershipHighlights/LeadershipHighlights'
 import LeadershipPillars from '../LeadershipPillars/LeadershipPillars'
+import QuantifiableImpact from '../QuantifiableImpact/QuantifiableImpact'
 import SelectedEngagements from '../SelectedEngagements/SelectedEngagements'
 import Timeline from '../Timeline/Timeline'
 import {
@@ -63,6 +64,7 @@ function ExecutiveSummary() {
 
       <LeadershipPillars />
       <SelectedEngagements />
+      <QuantifiableImpact />
       <LeadershipHighlights />
 
       <div className="executive-summary__achievements" id="achievements">

@@ -71,6 +71,7 @@
   --hero-portrait-radius: 1rem;
   --hero-portrait-border: 2px;
   --nav-height: 80px;
+  --navbar-desktop-min: 1024px;
   --radius-pill: 999px;
   --radius-lg: 16px;
   --radius-xl: 20px;

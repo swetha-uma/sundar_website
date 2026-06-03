@@ -8,11 +8,11 @@ function SelectedEngagements() {
     <section className="selected-engagements" id="selected-engagements" aria-label="Selected engagements">
       <div className="selected-engagements__inner">
         <header className="selected-engagements__header">
-          <div className="selected-engagements__header-left">
-            <span className="selected-engagements__label">{selectedEngagements.label}</span>
+          <span className="selected-engagements__label">{selectedEngagements.label}</span>
+          <div className="selected-engagements__header-body">
             <h2 className="selected-engagements__headline">{selectedEngagements.headline}</h2>
+            <p className="selected-engagements__description">{selectedEngagements.intro}</p>
           </div>
-          <p className="selected-engagements__description">{selectedEngagements.intro}</p>
         </header>
 
         <div className="selected-engagements__studies">
@@ -43,6 +43,20 @@ function SelectedEngagements() {
                             {line}
                           </span>
                         ))}
+                      </div>
+                    )}
+
+                    {engagement.leadershipSnapshot?.length > 0 && (
+                      <div className="selected-engagements__snapshot">
+                        <h4 className="selected-engagements__snapshot-title">Leadership Snapshot</h4>
+                        <div className="selected-engagements__snapshot-grid">
+                          {engagement.leadershipSnapshot.map((metric) => (
+                            <div key={metric.label} className="selected-engagements__snapshot-metric">
+                              <span className="selected-engagements__snapshot-value">{metric.value}</span>
+                              <span className="selected-engagements__snapshot-label">{metric.label}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </aside>
