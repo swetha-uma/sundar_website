@@ -16,6 +16,16 @@ function useNavbar() {
     (href) => {
       setActiveHash(href)
       closeMenu()
+
+      if (href === '#home') {
+        const homeSection = document.getElementById('home')
+        if (homeSection) {
+          homeSection.scrollIntoView({ behavior: 'smooth' })
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+        window.history.replaceState(null, '', href)
+      }
     },
     [closeMenu]
   )

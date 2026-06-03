@@ -10,7 +10,15 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar__inner">
-        <a href="#about" className="navbar__brand" onClick={() => handleNavClick('#about')}>
+        <a
+          href="#home"
+          className="navbar__brand"
+          aria-label="Back to home"
+          onClick={(event) => {
+            event.preventDefault()
+            handleNavClick('#home')
+          }}
+        >
           <span className="navbar__logo">{siteInfo.initials}</span>
           <span className="navbar__brand-text">
             <span className="navbar__name">{siteInfo.name}</span>
