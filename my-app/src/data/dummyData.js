@@ -96,47 +96,96 @@ export const executiveSummary = {
 
 export const achievementMilestones = [
   {
-    year: '1999',
-    title: 'Began in Cybersecurity',
-    description: 'Network security engineering across Dutch telecom giants.',
+    year: '1998',
+    title: 'Start of IT Career',
+    description: 'Accel Ltd, Chennai — beginning of a 25+ year technology journey.',
     alignment: 'left',
   },
   {
-    year: '2008',
-    title: 'First CISO Role',
-    description: 'Led enterprise risk transformation for global insurance leader.',
+    year: '2003',
+    title: 'Entered Cybersecurity',
+    description:
+      'Wipro Ltd — Information Security Analyst on Standard Chartered Bank across APAC, EMEA, Americas.',
     alignment: 'right',
   },
   {
-    year: '2015',
-    title: 'Cross-Continental Leadership',
-    description:
-      'Scaled zero-trust and GRC programmes across APAC, EMEA, and the Americas for Fortune 500 enterprises.',
+    year: '2006',
+    title: 'Information Security Manager',
+    description: 'TATA Consultancy Services — Qantas, Sony and Gen Re global engagements.',
     alignment: 'left',
   },
-]
-
-/** HIGHLIGHTS (#highlights) — recent ventures (continues timeline below achievements) */
-export const highlightMilestones = [
   {
-    year: '2015',
-    title: 'Founded SITCA Pty Ltd',
-    description: 'AI-driven GRC advisory serving boards and critical infrastructure.',
+    year: '2012',
+    title: 'HIPAA Compliance Lead',
+    description:
+      'Kaiser Permanente, USA (via CSC) — first major US healthcare compliance program.',
+    alignment: 'right',
+  },
+  {
+    year: '2013',
+    title: 'Principal Cyber Security Consultant',
+    description:
+      'KPN Royal Dutch Telecom, Netherlands — European telecom security leadership.',
+    alignment: 'left',
+  },
+  {
+    year: '2016',
+    title: 'First CISO Role',
+    description:
+      "IRDAI-appointed CISO at Chola MS — India's 6th largest general insurer.",
+    alignment: 'right',
+  },
+  {
+    year: '2018',
+    title: 'Enterprise Security Architect',
+    description:
+      "BHP (via Infosys) — 40% enterprise risk reduction across the world's largest diversified miner.",
+    alignment: 'left',
+  },
+  {
+    year: '2020',
+    title: 'Distinguished Talent Visa · nbn Australia',
+    description:
+      'Security Manager at nbn (via Infosys); Australia Subclass 858 visa awarded.',
+    alignment: 'right',
+  },
+  {
+    year: '2021',
+    title: 'NAB · Microsoft Australia',
+    description:
+      "World's 2nd largest Azure migration — 1,000 apps, zero APRA deviations. Woodside Energies advisory.",
+    alignment: 'left',
+  },
+  {
+    year: '2023',
+    title: 'Principal Cyber Security Advisor',
+    description: 'Mineral Resources (via SITCA Pty Ltd) — board-grade cyber strategy.',
     alignment: 'right',
   },
   {
     year: '2024',
     title: 'Founded iCISO LLC',
-    description: 'Houston-based fractional CISO SaaS democratising expertise.',
+    description:
+      'Houston-based fractional CISO platform. WA Electoral Commission Essential 8 uplift — 1.7M voter records.',
     alignment: 'left',
   },
   {
-    year: '2026',
-    title: 'Forbes Tech Council & IEEE Senior',
-    description: 'Recognised among the top 1% global cybersecurity strategists.',
+    year: '2025',
+    title: 'Sandfire NIST CSF 2.0 · NextDecade LNG',
+    description:
+      'First NIST CSF 2.0 ISMS in APAC mining; Cybersecurity Architect at NextDecade Corporation, Houston.',
     alignment: 'right',
   },
+  {
+    year: '2026',
+    title: 'Head of Cybersecurity (CISO), Oxea',
+    description: 'Tri-jurisdiction NIS2 + SOX + NIST CSF program across USA, Germany, China.',
+    alignment: 'left',
+  },
 ]
+
+/** HIGHLIGHTS (#highlights) — recent ventures (continues timeline below achievements) */
+export const highlightMilestones = []
 
 export const leadershipHighlights = {
   label: 'LEADERSHIP HIGHLIGHTS',
@@ -359,6 +408,58 @@ export const selectedEngagements = {
       ],
     },
     {
+      period: 'MAY 2023 – AUG 2024',
+      timelineLabel: 'Mineral Resources',
+      company: 'Mineral Resources Limited (via SITCA)',
+      locations: 'Australia — Perth HQ + Remote Sites',
+      role: 'Principal Cybersecurity Advisor',
+      sector: 'ASX-listed Mining — Multi-Billion AUD Revenue',
+      challenge:
+        'ASX-listed miner with $20B+ AUD in operational assets needed board-grade cyber strategy across IT and OT (SCADA/ICS) for corporate and remote site operations.',
+      actions: [
+        'Deployed IBM QRadar + Splunk SIEM across IT and OT estate',
+        'Rolled out Symantec/Sophos EDR across OT systems',
+        'Led SAP S/4HANA, Dynamics 365 and Azure hybrid security assurance',
+      ],
+      impact: [
+        'NIST CSF maturity improved from Level 2 to Level 4',
+        'OT incident response time reduced by 40% (6h → 3.5h)',
+        'Staff cyber awareness increased from 30% to 90%+',
+      ],
+      leadershipSnapshot: [
+        { label: 'NIST CSF Maturity', value: 'Level 2 → 4' },
+        { label: 'OT Response Time', value: '6h → 3.5h' },
+        { label: 'Cyber Awareness', value: '30% → 90%+' },
+        { label: 'Operational Assets', value: '$20B+ AUD' },
+      ],
+    },
+    {
+      period: 'JUN 2021 – DEC 2022',
+      timelineLabel: 'Woodside Energies',
+      company: 'Woodside Energies (via Data #3)',
+      locations: 'Australia — Perth · Karratha · Offshore',
+      role: 'Cybersecurity Advisor / GRC Specialist',
+      sector: "One of the World's Largest LNG Producers — SoCI Critical Infrastructure",
+      challenge:
+        'Required full SoCI Act alignment, IT/OT unification, and Secure-by-Design integration across digital delivery programs.',
+      actions: [
+        'Drove full SoCI Act alignment ahead of schedule',
+        'Delivered security assurance across SAP S/4HANA, Fiori, Ariba, and SuccessFactors',
+        'Authored Cybersecurity Engineering Standard adopted enterprise-wide',
+      ],
+      impact: [
+        'Achieved full SoCI regulatory alignment',
+        'Established formal vendor trust classification framework',
+        'Unified IT/OT governance architecture',
+      ],
+      leadershipSnapshot: [
+        { label: 'SoCI Alignment', value: 'Full Compliance' },
+        { label: 'Vendor Trust Framework', value: 'Established' },
+        { label: 'IT/OT Governance', value: 'Unified' },
+        { label: 'Engineering Standard', value: 'Enterprise-Wide' },
+      ],
+    },
+    {
       period: 'MAR – JUN 2021',
       timelineLabel: 'Microsoft Australia – NAB',
       company: 'Microsoft Australia — NAB Cloud Migration',
@@ -382,6 +483,32 @@ export const selectedEngagements = {
         { label: 'APRA Compliance', value: 'Zero Deviations' },
         { label: 'Critical Findings', value: 'Zero' },
         { label: 'Cloud Scope', value: 'Azure / AWS' },
+      ],
+    },
+    {
+      period: 'JUN 2020 – MAR 2021',
+      timelineLabel: 'NBN Co',
+      company: 'NBN Co (via Infosys)',
+      locations: 'Australia — National',
+      role: 'Security Manager / Cybersecurity Architect',
+      sector: 'National Broadband Network — Critical National Telecom Infrastructure',
+      challenge:
+        "Australia's national broadband operator serving 11M+ premises required a unified cybersecurity reference model and automated NIST CSF tracking.",
+      actions: [
+        'Delivered full NIST CSF review and tactical improvement plan',
+        'Authored Technical Reference Model standardising national cybersecurity patterns',
+        'Automated control tracking via Cisco ISE and deployed Cisco Secure Web',
+      ],
+      impact: [
+        'Protected 11M+ Australian premises',
+        'Standardised cybersecurity architecture nationwide',
+        'Converted NIST CSF tracking from manual to automated',
+      ],
+      leadershipSnapshot: [
+        { label: 'Premises Protected', value: '11M+' },
+        { label: 'Architecture', value: 'Nationwide Standard' },
+        { label: 'NIST CSF Tracking', value: 'Automated' },
+        { label: 'Reference Model', value: 'Authored' },
       ],
     },
     {
@@ -434,6 +561,88 @@ export const selectedEngagements = {
         { label: 'Program Maturity', value: 'Repeatable' },
         { label: 'GRC Program', value: 'Full Scope' },
         { label: 'Board Reporting', value: 'Established' },
+      ],
+    },
+    {
+      period: 'OCT 2013 – SEP 2016',
+      timelineLabel: 'KPN',
+      company: 'KPN Royal Dutch Telecom (via Mindtree)',
+      locations: 'Netherlands (EU)',
+      role: 'Principal Cybersecurity Consultant',
+      sector: 'Largest Telecom Provider in the Netherlands — Critical National Infrastructure',
+      challenge:
+        'Enterprise clients had fragmented ISO 27001 posture, manual audit preparation, and limited compliance visibility.',
+      actions: [
+        'Delivered ISO 27001/27002 programs across critical infrastructure clients',
+        'Built SharePoint audit repository with ServiceNow workflow automation',
+        'Implemented executive compliance dashboards',
+      ],
+      impact: [
+        'Achieved ISO 27001 certification across 3 critical infrastructure clients',
+        'Delivered PCI DSS compliance for a government agency',
+        'Framework adopted across multiple European telecom entities',
+      ],
+      leadershipSnapshot: [
+        { label: 'ISO 27001 Clients', value: '3 Certified' },
+        { label: 'PCI DSS', value: 'Government Agency' },
+        { label: 'Audit Automation', value: 'ServiceNow' },
+        { label: 'Framework Adoption', value: 'Pan-European' },
+      ],
+    },
+    {
+      period: 'JUN 2012 – SEP 2013',
+      timelineLabel: 'Kaiser Permanente',
+      company: 'Kaiser Permanente (via CSC)',
+      locations: 'USA — National (Delivered from Chennai)',
+      role: 'Lead Information Security Specialist',
+      sector: "Healthcare — ~$90B Revenue · Millions of Members' PHI",
+      challenge:
+        "One of America's largest not-for-profit health plans required end-to-end HIPAA lifecycle management plus SOX, PCI DSS, and ISO 27001 readiness across onshore and offshore operations.",
+      actions: [
+        'Expanded control coverage from 45 to 120 controls across offshore and onshore teams',
+        'Led HIPAA, SOX, PCI DSS v1/v2, and ISO 27001 pre-audit programs',
+        'Rebuilt phishing simulation and incident response playbooks',
+      ],
+      impact: [
+        'Audit findings reduced from 14 major findings to 2 minor findings',
+        'HIPAA compliance scores improved by 25%',
+        'Incident response time reduced from 72 hours to less than 12 hours',
+        'Security framework replicated across 5 additional healthcare clients',
+      ],
+      leadershipSnapshot: [
+        { label: 'Audit Findings', value: '14 → 2' },
+        { label: 'HIPAA Compliance', value: '+25%' },
+        { label: 'Incident Response', value: '72h → <12h' },
+        { label: 'Framework Replication', value: '5 Clients' },
+      ],
+    },
+    {
+      period: '2006 – 2012',
+      timelineLabel: 'TATA Consultancy Services',
+      company: 'TATA Consultancy Services — Global Clients',
+      locations: 'USA (California, Connecticut, Texas) · Australia · India',
+      role: 'Information Security Manager',
+      sector:
+        'Aviation · Entertainment · Reinsurance · Technology · Retail — Qantas · Sony USA · Gen Re · Lexmark · Michaels Stores',
+      challenge:
+        'Five Fortune-scale clients across aviation, entertainment, reinsurance, technology, and retail required SOX ITGC, PCI DSS, and BCP/DR programs delivered with consistent audit-grade governance and compliance outcomes.',
+      actions: [
+        'Delivered SOX ITGC programs across Qantas SAP, HRMS, and finance platforms',
+        'Led Sony PCI DSS v2.0 compliance program covering 12 control domains and QSA coordination',
+        'Designed BCP/DR programs for flight operations, ticketing, and crew management systems',
+      ],
+      impact: [
+        'Qantas achieved zero major SOX audit findings',
+        'Sony reduced unauthorized access incidents by 70%',
+        'Sony reduced audit preparation effort by 40%',
+        'Lexmark reduced incident resolution time by 60%',
+        'Sony successfully achieved PCI DSS v2.0 certification',
+      ],
+      leadershipSnapshot: [
+        { label: 'Qantas SOX Audit', value: 'Zero Major Findings' },
+        { label: 'Sony Access Incidents', value: '↓ 70%' },
+        { label: 'Sony Audit Effort', value: '↓ 40%' },
+        { label: 'Sony PCI DSS', value: 'v2.0 Certified' },
       ],
     },
     {
